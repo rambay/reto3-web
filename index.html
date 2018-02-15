@@ -16,37 +16,49 @@
   <header class="headerBlog pink darken-1">
     <h1 class="headerBlog--title center-align">COREUPGRADE <span class="headerBlog--titleYear">2018</span></h1>
     <a href="#" data-activates="slide-out" class="button-collapse white-text"><i class="material-icons menuToggle">menu</i></a>
-    <section>
-      <ul class="side-nav fixed menuBlog grey darken-4 z-depth-4" id="slide-out">
-        <div class="logoBlog">
-          <img src="assets/Ubuntu-logo.png" alt="logo" width="180">
-        </div>
+    <nav class="side-nav fixed grey darken-4 z-depth-4 menuBlog" id="slide-out">
+      <div class="logoBlog">
+        <img src="assets/Ubuntu-logo.png" alt="logo" width="180">
+      </div>
+      <ul>
         <li class="menuBlog--item"><a class="menuBlog--link white-text" href="">| Blog</a></li>
         <li class="menuBlog--item"><a class="menuBlog--link white-text" href="">| Internacional</a></li>
         <li class="menuBlog--item"><a class="menuBlog--link white-text" href="">| Noticias</a></li>
         <li class="menuBlog--item"><a class="menuBlog--link white-text" href="">| Foro</a></li>
       </ul>
+    </nav>
+    <section class="paginaActual pink darken-3">
+      <a href="#!" class="breadcrumb">Home</a>
+      <a href="#!" class="breadcrumb">Blog</a>
     </section>
   </header>
-  <nav>
-    <div class="paginaActual pink darken-3">
-      <div class="col s12">
-        <a href="#!" class="breadcrumb">Home</a>
-        <a href="#!" class="breadcrumb">Blog</a>
-      </div>
-    </div>
-  </nav>
 
   <main class="contentBlog">
     <div class="row">
 
-
       <div class="container">
         <section class="col s12 articleBlog">
-          <article class="articleBlog--first">
-            <div class="progress">
-              <div class="indeterminate"></div>
+          
+              <!--          // PRELOADER-->
+
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
             </div>
+          </div>
+          
+            <!--          // PRELOADER-->
+
+
+          <article class="articleBlog--first">
             <header class="headerArticle center-align">
               <h2 class="headerArticle--title">Prototipando apps con Sketch</h2>
               <time class="headerBlog--fecha">Enviado el 14-02-2018 01:45pm</time>
@@ -84,10 +96,25 @@
             </section>
           </article>
           
-          <article class="articleBlog--first">
-            <div class="progress">
-              <div class="indeterminate"></div>
+          <!--          // PRELOADER-->
+
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
             </div>
+          </div>
+          
+          <!--          // PRELOADER-->
+
+          <article class="articleBlog--first">
             <header class="headerArticle center-align">
               <h2 class="headerArticle--title">Prototipando apps con Sketch</h2>
               <time class="headerBlog--fecha">Enviado el 14-02-2018 01:45pm</time>
@@ -125,10 +152,25 @@
             </section>
           </article>
           
-          <article class="articleBlog--first">
-            <div class="progress">
-              <div class="indeterminate"></div>
+          <!--          // PRELOADER-->
+
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
             </div>
+          </div>
+          
+          <!--          // PRELOADER-->
+
+          <article class="articleBlog--first">
             <header class="headerArticle center-align">
               <h2 class="headerArticle--title">Prototipando apps con Sketch</h2>
               <time class="headerBlog--fecha">Enviado el 14-02-2018 01:45pm</time>
@@ -165,14 +207,29 @@
               </a>
             </section>
           </article>
-          
+
         </section>
+        
+        <!--          // PRELOADER-->
+
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!--          // PRELOADER-->
 
         <section class="otrosArticulos">
           <div class="row">
-            <div class="progress">
-              <div class="indeterminate"></div>
-            </div>
             <div class="col s12 m6">
               <div class="card small">
                 <div class="card-image">
@@ -274,6 +331,15 @@
     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
     //$('.collapsible').collapsible();
 
+    // PRELOADER
+
+    document.addEventListener("DOMContentLoaded", function() {
+      $('.preloader-background').delay(1700).fadeOut('slow');
+
+      $('.preloader-wrapper')
+        .delay(1700)
+        .fadeOut();
+    });
   </script>
 </body>
 
